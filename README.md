@@ -220,9 +220,9 @@ for(int i=0;i<4;i++){
 ##### 7. 音乐播放
 
 背景音乐与特效音乐（鼠标点击、炸弹爆炸）, 都由线程来负责。
-![Alt text](./1515047537977.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/13.png)
 音乐分两种，一种是循环播放（背景音乐），另一种是只播放一次（例如炸弹）。代码只是一个参数的差别
-![Alt text](./1515047971644.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/14.png)
  
 
 
@@ -238,7 +238,7 @@ for(int i=0;i<4;i++){
 
 #### 二、程序流程框图、调用函数关系、文件列表 
 ##### 1. 程序流程框图
-![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/13.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/15.png)
 
 
 
@@ -342,7 +342,7 @@ static class MyTimerBump extends TimerTask
 >timertest中public void run()
 
 ##### 3. 文件列表
-![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/14.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/16.png)
 
 
 
@@ -394,7 +394,7 @@ MVC全名是Model View Controller，是模型(model)－视图(view)－控制器(
 
 #####3. 得意点：
 为了还原真实的泡泡堂场景，所有图像、音乐、道具等等均为原版资源，地图布局为原版泡泡堂，具有非常高的还原度。泡泡堂作为十五年前盛极一时的游戏，由韩国游戏公司Nexon开发。我用了2000余行java代码实现了原泡泡堂50%的基础操作。还是很有成就感的。
-![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/15.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/17.png)
 **原版泡泡堂**
 
 与先前做过的一些课程游戏坦克大战，赛车相比，这次的动画，音乐细节做得更为细致。如果有机会，我还想用opengl来实现一下3d版本的泡泡堂。

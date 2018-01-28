@@ -181,7 +181,7 @@ for(int i=0;i<4;i++){
 
 
 
-![Alt text](./RoleDie.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/12.png)
 
 ##### 6. 线程定时器
 在本工程中有专门的一个TimerTest的类，内含大量的静态函数继承Timertask的函数，供游戏中需要定时器的功能，例如人物移动动画，开场动画，炸弹定时器，音乐定时器等等，有着广泛的应用。以下是炸弹定时器的一个例子。
@@ -238,7 +238,7 @@ for(int i=0;i<4;i++){
 
 #### 二、程序流程框图、调用函数关系、文件列表 
 ##### 1. 程序流程框图
-![Alt text](./未命名文件.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/13.png)
 
 
 
@@ -342,7 +342,7 @@ static class MyTimerBump extends TimerTask
 >timertest中public void run()
 
 ##### 3. 文件列表
-![Alt text](./1515048209940.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/14.png)
 
 
 
@@ -394,7 +394,7 @@ MVC全名是Model View Controller，是模型(model)－视图(view)－控制器(
 
 #####3. 得意点：
 为了还原真实的泡泡堂场景，所有图像、音乐、道具等等均为原版资源，地图布局为原版泡泡堂，具有非常高的还原度。泡泡堂作为十五年前盛极一时的游戏，由韩国游戏公司Nexon开发。我用了2000余行java代码实现了原泡泡堂50%的基础操作。还是很有成就感的。
-![Alt text](./1515130355467.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/15.png)
 **原版泡泡堂**
 
 与先前做过的一些课程游戏坦克大战，赛车相比，这次的动画，音乐细节做得更为细致。如果有机会，我还想用opengl来实现一下3d版本的泡泡堂。
@@ -412,7 +412,7 @@ MVC全名是Model View Controller，是模型(model)－视图(view)－控制器(
 玩家一：WSAD控制上下左右，J放炮
 玩家二：↑↓←→控制上下左右，L放炮
 按P键初始化程序。
-![Alt text](./1515129857499.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/16.png)
 
 
 

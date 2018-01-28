@@ -26,7 +26,6 @@
 ![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/2.png)
 用大小13*15数组的方式存放地图元素信息,每个单元格需要放置什么样元素，repaint回调函数依据大小13*15数组信息进行场景的绘制。
 ![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/3.png)
-![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/4.png)
 数组实现方式：
 ```
  // 地图信息
@@ -70,7 +69,7 @@ imgmap[GRASS]=ImageIO.read(new File("image/map/grass.png"));
 
 
 
-![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/5.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/4.png)
 
 
 
@@ -110,7 +109,7 @@ for(int i=0;i<4;i++){
                 }
             }
 ```         
-![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/6.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/5.png)
 
 
 
@@ -122,7 +121,7 @@ for(int i=0;i<4;i++){
 
 ##### 3. 炸弹
 泡泡角色通过释放炸弹摧毁乐高积木来获取道具以及杀死对手。炸弹释放后不会立即爆炸，而是在释放若干时间后自行爆炸。炸弹的爆炸有连锁反应。
-![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/7.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/6.png)
 炸弹的定时效果由线程定时器控制，定时器会在后面介绍。
 炸弹的水波也用贴图动画的形式实现，为了获得的爆炸效果，炸弹的贴图动态程度更高一些。如果仔细看的话，不同点的爆炸纹理是不同的。
 
@@ -142,7 +141,7 @@ for(int i=0;i<4;i++){
 
 
 
-![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/8.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/7.png)
 >**炸弹的算法**在这里需要一提。
 炸弹的水波蔓延用**宽度搜索**的方式进行实现，在宽度搜索的过程中，如果当前距离小于水波长度，依次执行以下内容:
 1. 判定当前区域，如果是房子或者树不可蔓延，并且停止继续蔓延；如果是盒子则进行炸毁，如果是人物则杀死人物。
@@ -152,16 +151,16 @@ for(int i=0;i<4;i++){
 
 ##### 4. 道具
 玩家通过拾取不同的道具，从而获得不同能力的增长。例如拾取跑鞋可以加速，拾取炸弹可以增加释放炸弹的数量，拾取药水可以增加炸弹压力等等。拾取宠物可以获得坐骑，坐骑可以抵一条命。
-![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/9.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/8.png)
 
 如果捡到坐骑的话，人物动画切换坐骑动画。在实现过程中，就是repaint函数画人物时，检测Role类成员变量pet的值，根据pet的情况进行绘图。
-![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/10.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/9.png)
 
 
 ##### 5. 被炸弹炸死
 当人物被水波炸到时，会被水波困住，然后爆炸死亡，游戏结束。
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/10.png)
 ![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/11.png)
-![Alt text](./1515038889867.png)
 爆炸死亡时会有动画，为获得更好的游戏效果。动画同样用播放图片数组来实现帧的效果。
 
 
@@ -181,7 +180,7 @@ for(int i=0;i<4;i++){
 
 
 
-![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/12.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/11.png)
 
 ##### 6. 线程定时器
 在本工程中有专门的一个TimerTest的类，内含大量的静态函数继承Timertask的函数，供游戏中需要定时器的功能，例如人物移动动画，开场动画，炸弹定时器，音乐定时器等等，有着广泛的应用。以下是炸弹定时器的一个例子。
@@ -220,9 +219,9 @@ for(int i=0;i<4;i++){
 ##### 7. 音乐播放
 
 背景音乐与特效音乐（鼠标点击、炸弹爆炸）, 都由线程来负责。
-![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/13.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/12.png)
 音乐分两种，一种是循环播放（背景音乐），另一种是只播放一次（例如炸弹）。代码只是一个参数的差别
-![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/14.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/13.png)
  
 
 
@@ -238,7 +237,7 @@ for(int i=0;i<4;i++){
 
 #### 二、程序流程框图、调用函数关系、文件列表 
 ##### 1. 程序流程框图
-![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/15.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/14.png)
 
 
 
@@ -342,7 +341,7 @@ static class MyTimerBump extends TimerTask
 >timertest中public void run()
 
 ##### 3. 文件列表
-![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/16.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/15.png)
 
 
 
@@ -394,7 +393,7 @@ MVC全名是Model View Controller，是模型(model)－视图(view)－控制器(
 
 #####3. 得意点：
 为了还原真实的泡泡堂场景，所有图像、音乐、道具等等均为原版资源，地图布局为原版泡泡堂，具有非常高的还原度。泡泡堂作为十五年前盛极一时的游戏，由韩国游戏公司Nexon开发。我用了2000余行java代码实现了原泡泡堂50%的基础操作。还是很有成就感的。
-![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/17.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/16.png)
 **原版泡泡堂**
 
 与先前做过的一些课程游戏坦克大战，赛车相比，这次的动画，音乐细节做得更为细致。如果有机会，我还想用opengl来实现一下3d版本的泡泡堂。
@@ -412,7 +411,7 @@ MVC全名是Model View Controller，是模型(model)－视图(view)－控制器(
 玩家一：WSAD控制上下左右，J放炮
 玩家二：↑↓←→控制上下左右，L放炮
 按P键初始化程序。
-![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/16.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/bnb/17.png)
 
 
 

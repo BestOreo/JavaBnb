@@ -1,3 +1,5 @@
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/ppt/Java泡泡堂PPT1_1.png)
+
 ### JAVA泡泡堂
 **姓名：葛帅琦**
 **学号：3150102193**

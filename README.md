@@ -1,4 +1,4 @@
-![Alt text](https://github.com/BestOreo/Pic-for-README.md/ppt/Java泡泡堂PPT1_1.png)
+![Alt text](https://github.com/BestOreo/Pic-for-README.md/blob/master/ppt/Java%E6%B3%A1%E6%B3%A1%E5%A0%82PPT1_1.jpg)
 
 ### JAVA泡泡堂
 **姓名：葛帅琦**
